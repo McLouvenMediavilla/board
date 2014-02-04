@@ -1,0 +1,80 @@
+[04-Feb-2014 01:54:36] PHP Warning:  require(/opt/lampp/htdocs/board/app/controllers/thread_index_controller.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /opt/lampp/htdocs/board/app/config/bootstrap.php on line 19
+[04-Feb-2014 01:54:36] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/opt/lampp/htdocs/board/app/controllers/thread_index_controller.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/board/app/config/bootstrap.php on line 19
+[04-Feb-2014 01:59:00] PHP Warning:  require(/opt/lampp/htdocs/board/app/controllers/thread_index_controller.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /opt/lampp/htdocs/board/app/config/bootstrap.php on line 19
+[04-Feb-2014 01:59:00] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/opt/lampp/htdocs/board/app/controllers/thread_index_controller.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/board/app/config/bootstrap.php on line 19
+[04-Feb-2014 02:04:05] PHP Fatal error:  Call to undefined function get_defined_var() in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 8
+[04-Feb-2014 02:04:37] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:17:49] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:17:52] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:17:52] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:17:53] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:17:53] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:21:13] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:21:14] PHP Fatal error:  Uncaught exception 'DCException' with message 'action does not exist' in /opt/lampp/htdocs/board/dietcake/core/controller.php:36
+Stack trace:
+#0 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(12): Controller->dispatchAction()
+#1 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#2 {main}
+  thrown in /opt/lampp/htdocs/board/dietcake/core/controller.php on line 36
+[04-Feb-2014 02:32:52] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:32:54] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:33:25] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:33:27] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:33:30] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:52:06] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:52:07] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:52:27] PHP Parse error:  syntax error, unexpected ';' in /opt/lampp/htdocs/board/app/views/thread/write_end.php on line 7
+[04-Feb-2014 02:52:48] PHP Parse error:  syntax error, unexpected ';' in /opt/lampp/htdocs/board/app/views/thread/write_end.php on line 7
+[04-Feb-2014 02:52:54] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:52:56] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:53:04] PHP Parse error:  syntax error, unexpected ';' in /opt/lampp/htdocs/board/app/views/thread/write_end.php on line 7
+[04-Feb-2014 02:59:02] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:59:03] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:59:13] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:59:15] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:59:30] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 02:59:31] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:24:36] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:24:38] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:24:40] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:25:27] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:25:30] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:25:35] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:25:36] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:25:48] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:25:50] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:25:53] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:01] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:06] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:10] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:12] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:19] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:22] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:28] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:35] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:36] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:39] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:40] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:43] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:48] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:57] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:26:58] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:01] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:02] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:05] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:06] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:08] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:13] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:15] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:17] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:21] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:23] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:26] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:30] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:36] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:38] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:39] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:42] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:27:45] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:28:01] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[04-Feb-2014 03:28:02] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
