@@ -110,3 +110,4 @@
 127.0.0.1 - - [04/Feb/2014:11:32:34 +0800] "GET /thread/view?thread_id=4 HTTP/1.1" 200 672
 127.0.0.1 - - [04/Feb/2014:11:32:47 +0800] "POST /thread/write HTTP/1.1" 200 495
 127.0.0.1 - - [04/Feb/2014:11:32:49 +0800] "GET /thread/view?thread_id=4 HTTP/1.1" 200 700
+127.0.0.1 - - [04/Feb/2014:12:15:43 +0800] "GET /thread/view?thread_id=4 HTTP/1.1" 200 623
