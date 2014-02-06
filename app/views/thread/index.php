@@ -1,4 +1,13 @@
-<h1>All threads</h1>
+<h1>
+<?php 
+if (!isset($_SESSION['username'])) {
+    header('Location: user/login');
+} else {
+	echo "Hello {$_SESSION['username']}";
+}
+?>
+</h1>
+<h2>All threads</h2>
 <?php 
 //$page_threads = array_chunk($threads, 3);
 //$page_count = count($page_threads);
@@ -18,4 +27,4 @@
 <?php //endfor ?>
 <?php //for loop page numbers?>
 <a class="btn btn-large btn-primary" href="<?php eh(url('thread/create')) ?>">Create</a>
-<a class="btn btn-large btn-primary" href="<?php eh(url('user/login')) ?>">Login</a>
+<a class="btn btn-large btn-primary" href="<?php eh(url('user/logout')) ?>">Logout</a>

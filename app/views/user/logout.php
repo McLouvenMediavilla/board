@@ -1,7 +1,7 @@
-<h2>Register User</h2>
+<h2>Logout</h2>
 
 <p class="alert alert-success">
-	You successfully register your account.
+	You have successfully logged out.
 </p>
 
 <a href="http://board.example.com">

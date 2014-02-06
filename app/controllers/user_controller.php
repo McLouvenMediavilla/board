@@ -53,4 +53,18 @@ class UserController extends AppController
 		$this->set(get_defined_vars());
 		$this->render($page);
 	}
+
+	public function logout()
+	{
+		$page = Param::get('page_next', 'logout');
+
+        switch ($page) {
+        case 'logout':
+            session_destroy();
+            break;
+        default:
+            throw new NotFoundException("{$page} is not found");
+		    break;
+        }
+	}
 }
