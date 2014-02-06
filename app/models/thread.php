@@ -77,5 +77,19 @@ class Thread extends AppModel
 			array($this->id, $comment->username, $comment->body)
 		);
 	}
+
+	public function register(User $user)
+	{
+		$this->validate();
+		$user->validate();
+		if ($this->hasError() || $user->hasError()) {
+		    throw new ValidationException('invalid user');
+		}
+
+		$db = DB::conn();
+		$db->query(
+			'INSERT INTO user SET username = ?, password = ?', 
+			array($user->username, md5($user->password))
+		);
+	}
 }
-?>
