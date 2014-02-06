@@ -18,4 +18,4 @@
 <?php //endfor ?>
 <?php //for loop page numbers?>
 <a class="btn btn-large btn-primary" href="<?php eh(url('thread/create')) ?>">Create</a>
-<a class="btn btn-large btn-primary" href="<?php eh(url('thread/register')) ?>">Register</a>
+<a class="btn btn-large btn-primary" href="<?php eh(url('user/login')) ?>">Login</a>

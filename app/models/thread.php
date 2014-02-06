@@ -52,7 +52,7 @@ class Thread extends AppModel
 		if ($this->hasError() || $comment->hasError()) {
 			throw new ValidationException('invalid thread or comment');
 		}
-
+        
 		$db = DB::conn();
 		$db->begin();
 
@@ -76,20 +76,5 @@ class Thread extends AppModel
 			'INSERT INTO comment SET thread_id = ?, username = ?, body = ?, created = NOW()',
 			array($this->id, $comment->username, $comment->body)
 		);
-	}
-
-	public function register(User $user)
-	{
-		$this->validate();
-		$user->validate();
-		if ($this->hasError() || $user->hasError()) {
-		    throw new ValidationException('invalid user');
-		}
-
-		$db = DB::conn();
-		$db->query(
-			'INSERT INTO user SET username = ?, password = ?', 
-			array($user->username, md5($user->password))
-		);
-	}
+	}	
 }

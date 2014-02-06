@@ -210,3 +210,200 @@ Stack trace:
 #1 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
 #2 {main}
   thrown in /opt/lampp/htdocs/board/dietcake/core/controller.php on line 36
+[06-Feb-2014 04:40:32] PHP Strict Standards:  Non-static method User::getUser() should not be called statically, assuming $this from incompatible context in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 103
+[06-Feb-2014 04:40:32] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = 'd41d8cd98f00b204e9800998ecf8427e'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/user.php(23): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(103): User->getUser(NULL, NULL)
+#6 /opt/lampp/htdocs/board/diet in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 04:41:04] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = 'd41d8cd98f00b204e9800998ecf8427e'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/user.php(23): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(103): User::getUser(NULL, NULL)
+#6 /opt/lampp/htdocs/board/diet in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 04:42:25] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = 'd41d8cd98f00b204e9800998ecf8427e'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/user.php(23): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(103): User::getUser(NULL, NULL)
+#6 /opt/lampp/htdocs/board/diet in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 04:46:17] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = NULL' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/user.php(23): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(103): User::getUser(NULL, NULL)
+#6 /opt/lampp/htdocs/board/dietcake/core/controller.php(46):  in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 04:52:55] PHP Notice:  Undefined variable: account in /opt/lampp/htdocs/board/app/views/thread/login.php on line 8
+[06-Feb-2014 04:53:22] PHP Notice:  Undefined variable: account in /opt/lampp/htdocs/board/app/views/thread/login.php on line 8
+[06-Feb-2014 04:53:23] PHP Notice:  Undefined variable: account in /opt/lampp/htdocs/board/app/views/thread/login.php on line 8
+[06-Feb-2014 05:08:51] PHP Parse error:  syntax error, unexpected T_ENDIF in /opt/lampp/htdocs/board/app/views/thread/index.php on line 4
+[06-Feb-2014 05:09:11] PHP Notice:  Undefined variable: account in /opt/lampp/htdocs/board/app/views/thread/index.php on line 2
+[06-Feb-2014 05:09:11] PHP Notice:  Trying to get property of non-object in /opt/lampp/htdocs/board/app/views/thread/index.php on line 2
+[06-Feb-2014 05:09:41] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = 'password1'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(102): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(114): Thread->getUser('testuser1', 'password1')
+#6 /opt/lampp/htdocs/board/dietcake in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 05:12:44] PHP Notice:  Undefined variable: user in /opt/lampp/htdocs/board/app/models/thread.php on line 99
+[06-Feb-2014 05:12:44] PHP Fatal error:  Call to a member function validate() on a non-object in /opt/lampp/htdocs/board/app/models/thread.php on line 99
+[06-Feb-2014 05:14:09] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = 'password1'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(103): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(114): Thread->getUser('testuser1', 'password1')
+#6 /opt/lampp/htdocs/board/dietcake in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 05:17:26] PHP Notice:  Undefined variable: user in /opt/lampp/htdocs/board/app/views/thread/login.php on line 3
+[06-Feb-2014 05:17:26] PHP Fatal error:  Call to a member function hasError() on a non-object in /opt/lampp/htdocs/board/app/views/thread/login.php on line 3
+[06-Feb-2014 05:17:56] PHP Fatal error:  Using $this when not in object context in /opt/lampp/htdocs/board/app/views/thread/login.php on line 3
+[06-Feb-2014 05:18:26] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = 'password1'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(103): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(113): Thread->getUser('testuser1', 'password1')
+#6 /opt/lampp/htdocs/board/dietcake in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 05:21:18] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = 'password1'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(103): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(113): Thread->getUser('testuser1', 'password1')
+#6 /opt/lampp/htdocs/board/dietcake in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 05:21:46] PHP Parse error:  syntax error, unexpected ';' in /opt/lampp/htdocs/board/app/models/thread.php on line 103
+[06-Feb-2014 05:22:15] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = '7c6a180b36896a0a8c02787eeafb0e4c'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(103): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(113): Thread->getUser('testuser1', 'password1')
+#6 /opt/lamp in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 05:39:24] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = '7c6a180b36896a0a8c02787eeafb0e4c'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(103): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(113): Thread->getUser('testuser1', 'password1')
+#6 /opt/lamp in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 05:42:45] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = '7c6a180b36896a0a8c02787eeafb0e4c'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT 1 FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT 1 FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(103): SimpleDBI->row('SELECT 1 FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(113): Thread->getUser('testuser1', 'password1')
+#6 /opt/lamp in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 05:42:47] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = '7c6a180b36896a0a8c02787eeafb0e4c'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT 1 FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT 1 FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(103): SimpleDBI->row('SELECT 1 FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(113): Thread->getUser('testuser1', 'password1')
+#6 /opt/lamp in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 05:42:49] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = '7c6a180b36896a0a8c02787eeafb0e4c'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT 1 FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT 1 FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(103): SimpleDBI->row('SELECT 1 FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(113): Thread->getUser('testuser1', 'password1')
+#6 /opt/lamp in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 05:46:55] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' password = '7c6a180b36896a0a8c02787eeafb0e4c'' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM u...', Array)
+#3 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(248): SimpleDBI->rows('SELECT * FROM u...', Array)
+#4 /opt/lampp/htdocs/board/app/models/thread.php(105): SimpleDBI->row('SELECT * FROM u...', Array)
+#5 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(113): Thread->getUser('testuser1', 'password1')
+#6 /opt/lamp in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 06:34:09] PHP Fatal error:  Call to undefined method Thread::getUser() in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 113
+[06-Feb-2014 06:35:17] PHP Fatal error:  Call to undefined method Thread::register() in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 87
+[06-Feb-2014 06:42:27] PHP Fatal error:  Uncaught exception 'DCException' with message '/opt/lampp/htdocs/board/app/views/thread/register.php is not found' in /opt/lampp/htdocs/board/app/app_layout_view.php:34
+Stack trace:
+#0 /opt/lampp/htdocs/board/app/app_layout_view.php(23): AppLayoutView::extractAndMerge('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/board/dietcake/core/controller.php(83): AppLayoutView->render('register')
+#2 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(97): Controller->render('register')
+#3 /opt/lampp/htdocs/board/dietcake/core/controller.php(46): ThreadController->register()
+#4 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(12): Controller->dispatchAction()
+#5 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#6 {main}
+  thrown in /opt/lampp/htdocs/board/app/app_layout_view.php on line 34
+[06-Feb-2014 06:42:51] PHP Fatal error:  Uncaught exception 'DCException' with message '/opt/lampp/htdocs/board/app/views/thread/register.php is not found' in /opt/lampp/htdocs/board/app/app_layout_view.php:34
+Stack trace:
+#0 /opt/lampp/htdocs/board/app/app_layout_view.php(23): AppLayoutView::extractAndMerge('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/board/dietcake/core/controller.php(83): AppLayoutView->render('register')
+#2 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(97): Controller->render('register')
+#3 /opt/lampp/htdocs/board/dietcake/core/controller.php(46): ThreadController->register()
+#4 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(12): Controller->dispatchAction()
+#5 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#6 {main}
+  thrown in /opt/lampp/htdocs/board/app/app_layout_view.php on line 34
+[06-Feb-2014 06:52:54] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 41 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[06-Feb-2014 07:00:46] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 41 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[06-Feb-2014 07:01:04] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 41 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[06-Feb-2014 07:04:56] PHP Fatal error:  Call to a member function validate() on a non-object in /opt/lampp/htdocs/board/app/models/user.php on line 36
+[06-Feb-2014 07:16:21] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 46 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[06-Feb-2014 07:23:28] PHP Warning:  Missing argument 1 for User::getUser(), called in /opt/lampp/htdocs/board/app/views/user/login.php on line 2 and defined in /opt/lampp/htdocs/board/app/models/user.php on line 34
+[06-Feb-2014 07:23:28] PHP Warning:  Missing argument 2 for User::getUser(), called in /opt/lampp/htdocs/board/app/views/user/login.php on line 2 and defined in /opt/lampp/htdocs/board/app/models/user.php on line 34
+[06-Feb-2014 07:23:28] PHP Notice:  Undefined variable: username in /opt/lampp/htdocs/board/app/models/user.php on line 39
+[06-Feb-2014 07:23:28] PHP Notice:  Undefined variable: password in /opt/lampp/htdocs/board/app/models/user.php on line 39
+[06-Feb-2014 07:23:28] PHP Fatal error:  Uncaught exception 'ValidationException' with message 'invalid user' in /opt/lampp/htdocs/board/app/models/user.php:43
+Stack trace:
+#0 /opt/lampp/htdocs/board/app/views/user/login.php(2): User->getUser()
+#1 /opt/lampp/htdocs/board/app/app_layout_view.php(41): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/board/app/app_layout_view.php(23): AppLayoutView::extractAndMerge('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/board/dietcake/core/controller.php(83): AppLayoutView->render('login')
+#4 /opt/lampp/htdocs/board/app/controllers/user_controller.php(53): Controller->render('login')
+#5 /opt/lampp/htdocs/board/dietcake/core/controller.php(46): UserController->login()
+#6 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(12): Controller->dispatchAction()
+#7 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#8 {main}
+  thrown in /opt/lampp/htdocs/board/app/models/user.php on line 43
+[06-Feb-2014 07:24:40] PHP Notice:  Undefined variable: account in /opt/lampp/htdocs/board/app/views/user/login.php on line 2
+[06-Feb-2014 07:25:16] PHP Notice:  Undefined variable: login in /opt/lampp/htdocs/board/app/views/user/login.php on line 2
+[06-Feb-2014 07:25:16] PHP Notice:  Trying to get property of non-object in /opt/lampp/htdocs/board/app/views/user/login.php on line 2
+[06-Feb-2014 07:28:39] PHP Notice:  Undefined property: User::$row in /opt/lampp/htdocs/board/app/views/user/login.php on line 2
+[06-Feb-2014 07:29:10] PHP Notice:  Undefined property: User::$username in /opt/lampp/htdocs/board/app/views/user/login.php on line 2
+[06-Feb-2014 07:34:43] PHP Notice:  Undefined property: User::$username in /opt/lampp/htdocs/board/app/views/user/login.php on line 2
+[06-Feb-2014 07:34:49] PHP Notice:  Undefined property: User::$username in /opt/lampp/htdocs/board/app/views/user/login.php on line 2
+[06-Feb-2014 07:35:13] PHP Fatal error:  Call to a member function validate() on a non-object in /opt/lampp/htdocs/board/app/models/user.php on line 36
+[06-Feb-2014 07:35:59] PHP Catchable fatal error:  Argument 1 passed to User::getUser() must be an instance of User, string given, called in /opt/lampp/htdocs/board/app/controllers/user_controller.php on line 42 and defined in /opt/lampp/htdocs/board/app/models/user.php on line 34
+[06-Feb-2014 07:36:45] PHP Notice:  Undefined property: User::$username in /opt/lampp/htdocs/board/app/models/user.php on line 42
+[06-Feb-2014 07:36:45] PHP Notice:  Undefined property: User::$password in /opt/lampp/htdocs/board/app/models/user.php on line 42
+[06-Feb-2014 07:36:45] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 49 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[06-Feb-2014 07:58:59] PHP Notice:  Undefined variable: username in /opt/lampp/htdocs/board/app/models/user.php on line 44
+[06-Feb-2014 07:58:59] PHP Notice:  Undefined variable: password in /opt/lampp/htdocs/board/app/models/user.php on line 44
+[06-Feb-2014 07:58:59] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 47 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
