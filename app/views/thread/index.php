@@ -9,6 +9,7 @@ if (!isset($_SESSION['username'])) {
 </h1>
 <h2>All threads</h2>
 <?php 
+//Pagination not yet set
 //$page_threads = array_chunk($threads, 3);
 //$page_count = count($page_threads);
 //var_dump($page_threads);

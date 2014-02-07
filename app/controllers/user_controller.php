@@ -39,7 +39,7 @@ class UserController extends AppController
             $user->username = Param::get('username');
 		    $user->password = Param::get('password');
             try {
-            	$account = $user->getUser($user);
+            	$account = $user->checkUser($user);
             	$_SESSION['username'] = $user->username;
             } catch (ValidationException $e) {
 		    	$page = 'login';
@@ -66,5 +66,7 @@ class UserController extends AppController
             throw new NotFoundException("{$page} is not found");
 		    break;
         }
+
+        $this->render($page);
 	}
 }

@@ -31,7 +31,7 @@ class User extends AppModel
         $db->insert('user', $params);
 	}	
 
-	public function getUser($user)
+	public function checkUser($user)
     {
     	$this->validate();
 		$user->validate();
@@ -46,5 +46,11 @@ class User extends AppModel
 
 		return new self($row);		
 	}
-
+    
+    public static function getUserId($username)
+    {
+		$db = DB::conn();
+		$user_id = $db->value('SELECT id FROM user WHERE username = ?', array($username));
+		return $user_id;   	
+    }
 }

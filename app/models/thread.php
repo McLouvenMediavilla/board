@@ -35,7 +35,9 @@ class Thread extends AppModel
 
 		$db = DB::conn();
 		$rows = $db->rows(
-			'SELECT * FROM comment WHERE thread_id = ? ORDER BY created ASC',
+			'SELECT comment.id, thread_id, user.username, body, created FROM comment
+			INNER JOIN user ON comment.user_id = user.id
+			WHERE thread_id = ? ORDER BY created ASC',
 			array($this->id)
 		);
 		foreach ($rows as $row) {
@@ -56,7 +58,11 @@ class Thread extends AppModel
 		$db = DB::conn();
 		$db->begin();
 
-		$db->query('INSERT INTO thread SET title = ?, created = NOW()', array($this->title));
+        $user_id = User::getUserId($_SESSION['username']);
+
+		$db->query('INSERT INTO thread SET user_id = ?, title = ?, created = NOW()', 
+			array($user_id, $this->title)
+		);
 		$this->id = $db->lastInsertId();
 
 		// write first comment at the same time
@@ -70,11 +76,12 @@ class Thread extends AppModel
 		if (!$comment->validate()) {
 			throw new ValidationException('invalid comment');
 		}
-		
+
 		$db = DB::conn();
+		$user_id = User::getUserId($_SESSION['username']);
 		$db->query(
-			'INSERT INTO comment SET thread_id = ?, username = ?, body = ?, created = NOW()',
-			array($this->id, $comment->username, $comment->body)
+			'INSERT INTO comment SET thread_id = ?, user_id = ?, body = ?, created = NOW()',
+			array($this->id, $user_id, $comment->body)
 		);
 	}	
 }

@@ -429,3 +429,16 @@ Stack trace:
 #4 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
 #5 {main}
   thrown in /opt/lampp/htdocs/board/app/app_layout_view.php on line 34
+[06-Feb-2014 09:19:29] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 47 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[06-Feb-2014 09:48:51] PHP Fatal error:  Call to undefined method User::getUser() in /opt/lampp/htdocs/board/app/controllers/user_controller.php on line 42
+[06-Feb-2014 09:56:08] PHP Catchable fatal error:  Object of class User could not be converted to string in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[06-Feb-2014 10:00:27] PHP Fatal error:  Cannot use object of type User as array in /opt/lampp/htdocs/board/app/models/thread.php on line 60
+[06-Feb-2014 10:08:37] PHP Fatal error:  Cannot use object of type User as array in /opt/lampp/htdocs/board/app/controllers/user_controller.php on line 43
+[06-Feb-2014 10:32:25] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 47 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[06-Feb-2014 10:33:17] PHP Fatal error:  Call to undefined method User::getUserId() in /opt/lampp/htdocs/board/app/models/thread.php on line 57
+[07-Feb-2014 01:40:09] PHP Fatal error:  Call to undefined method User::getUserId() in /opt/lampp/htdocs/board/app/models/thread.php on line 57
+[07-Feb-2014 02:02:35] PHP Notice:  Undefined property: Comment::$username in /opt/lampp/htdocs/board/app/views/thread/view.php on line 6
+[07-Feb-2014 02:03:46] PHP Notice:  Undefined property: Comment::$username in /opt/lampp/htdocs/board/app/views/thread/view.php on line 6
+[07-Feb-2014 02:27:13] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/thread.php on line 16 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[07-Feb-2014 03:12:38] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 47 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[07-Feb-2014 03:13:57] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 47 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
