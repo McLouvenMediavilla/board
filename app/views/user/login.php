@@ -1,5 +1,5 @@
 <h1>User Login</h1>
-<?php if ($user->hasError()): ?>
+<?php if (!$valid): ?>
 <div class="alert alert-block">
     <h5 class="alert-heading">Incorrect username/password.</h5>
 </div>

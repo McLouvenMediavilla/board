@@ -31,18 +31,23 @@ class UserController extends AppController
 	{
 		$user = new User;
 		$page = Param::get('page_next', 'login');
+        $valid = true;        
 
 		switch ($page) {
 		case 'login':
             break;
         case 'login_end':
-            $user->username = Param::get('username');
-		    $user->password = Param::get('password');
-            try {
-            	$account = $user->checkUser($user);
-            	$_SESSION['username'] = $user->username;
-            } catch (ValidationException $e) {
-		    	$page = 'login';
+            $username = Param::get('username');
+		    $password = Param::get('password');
+
+            $account = $user->checkUser($username, $password);
+
+            if ($account) {
+                $_SESSION['username'] = $account['username'];
+                $_SESSION['id'] = $account['id'];
+            } else {
+                $valid = false;
+                $page = 'login';
             }
             break;
         default:

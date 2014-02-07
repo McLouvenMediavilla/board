@@ -33,3 +33,4 @@
 [Tue Feb 04 16:03:48 2014] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5, referer: http://board.example.com/thread/create
 [Tue Feb 04 16:03:52 2014] [error] [client 127.0.0.1] PHP Warning:  file_put_contents(/opt/lampp/htdocs/board/app/tmp/logs/debug.log) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: Permission denied in /opt/lampp/htdocs/board/app/config/log.php on line 79
 [Tue Feb 04 16:03:52 2014] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: title in /opt/lampp/htdocs/board/app/views/layouts/default.php on line 5
+[Fri Feb 07 14:23:44 2014] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /opt/lampp/htdocs/board/app/helpers/validation_helper.php on line 11

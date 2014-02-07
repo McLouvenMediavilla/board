@@ -17,8 +17,7 @@ class User extends AppModel
 	public function register($user)
 	{
 		$this->validate();
-		$user->validate();
-		if ($this->hasError() || $user->hasError()) {
+		if ($this->hasError()) {
 		    throw new ValidationException('invalid user');
 		}
 
@@ -31,26 +30,13 @@ class User extends AppModel
         $db->insert('user', $params);
 	}	
 
-	public function checkUser($user)
+	public function checkUser($username, $password)
     {
-    	$this->validate();
-		$user->validate();
-		if ($this->hasError() || $user->hasError()) {
-		    throw new ValidationException('invalid user');
-		}
-
         $db = DB::conn();
-		$row = $db->row('SELECT * FROM user WHERE username = ? AND password = ?',
-			array($user->username, md5($user->password))
+		$row = $db->row('SELECT id, username FROM user WHERE username = ? AND password = ?',
+			array($username, md5($password))
 		);
-
-		return new self($row);		
+		return $row;		
 	}
-    
-    public static function getUserId($username)
-    {
-		$db = DB::conn();
-		$user_id = $db->value('SELECT id FROM user WHERE username = ?', array($username));
-		return $user_id;   	
-    }
+	
 }

@@ -65,7 +65,7 @@ class Thread extends AppModel
 		$db = DB::conn();
 		$db->begin();
 
-        $user_id = User::getUserId($_SESSION['username']);
+        $user_id = $_SESSION['id'];
 
 		$db->query('INSERT INTO thread SET user_id = ?, title = ?, created = NOW()', 
 			array($user_id, $this->title)
@@ -85,7 +85,7 @@ class Thread extends AppModel
 		}
 
 		$db = DB::conn();
-		$user_id = User::getUserId($_SESSION['username']);
+		$user_id = $_SESSION['id'];
 		$db->query(
 			'INSERT INTO comment SET thread_id = ?, user_id = ?, body = ?, created = NOW()',
 			array($this->id, $user_id, $comment->body)
