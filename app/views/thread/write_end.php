@@ -4,6 +4,7 @@
 	You successfully wrote this comment.
 </p>
 
+<a href="/">&larr; Go to main</a>
 <a href="<?php eh(url('thread/view', array('thread_id' => $thread->id))) ?>">
-	&larr; Back to thread
+	Go to thread &rarr;
 </a>

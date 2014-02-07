@@ -4,6 +4,6 @@
 	You have successfully registered your account.
 </p>
 
-<a href="http://board.example.com">
+<a href='/'>
 	&larr; Back to main
 </a>

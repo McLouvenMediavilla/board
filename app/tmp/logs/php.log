@@ -442,3 +442,97 @@ Stack trace:
 [07-Feb-2014 02:27:13] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/thread.php on line 16 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
 [07-Feb-2014 03:12:38] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 47 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
 [07-Feb-2014 03:13:57] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 47 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8
+[07-Feb-2014 04:30:05] PHP Notice:  Undefined variable: limit in /opt/lampp/htdocs/board/app/models/thread.php on line 24
+[07-Feb-2014 04:30:05] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/views/thread/index.php on line 22
+[07-Feb-2014 04:30:05] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/views/thread/index.php on line 22
+[07-Feb-2014 04:30:05] PHP Notice:  Undefined variable: paginationCtrls in /opt/lampp/htdocs/board/app/views/thread/index.php on line 23
+[07-Feb-2014 04:30:41] PHP Notice:  Undefined variable: limit in /opt/lampp/htdocs/board/app/models/thread.php on line 24
+[07-Feb-2014 04:30:41] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/views/thread/index.php on line 22
+[07-Feb-2014 04:30:41] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/views/thread/index.php on line 22
+[07-Feb-2014 04:30:41] PHP Notice:  Undefined variable: paginationCtrls in /opt/lampp/htdocs/board/app/views/thread/index.php on line 23
+[07-Feb-2014 04:30:43] PHP Notice:  Undefined variable: limit in /opt/lampp/htdocs/board/app/models/thread.php on line 24
+[07-Feb-2014 04:30:43] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/views/thread/index.php on line 22
+[07-Feb-2014 04:30:43] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/views/thread/index.php on line 22
+[07-Feb-2014 04:30:43] PHP Notice:  Undefined variable: paginationCtrls in /opt/lampp/htdocs/board/app/views/thread/index.php on line 23
+[07-Feb-2014 04:31:32] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261900 bytes) in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php on line 230
+[07-Feb-2014 04:31:46] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261900 bytes) in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php on line 230
+[07-Feb-2014 04:32:00] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261900 bytes) in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php on line 230
+[07-Feb-2014 04:32:38] PHP Notice:  Undefined variable: limit in /opt/lampp/htdocs/board/app/models/thread.php on line 24
+[07-Feb-2014 04:35:36] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/models/thread.php on line 23
+[07-Feb-2014 04:35:36] PHP Notice:  Undefined variable: page_rows in /opt/lampp/htdocs/board/app/models/thread.php on line 23
+[07-Feb-2014 04:35:36] PHP Notice:  Undefined variable: page_rows in /opt/lampp/htdocs/board/app/models/thread.php on line 23
+[07-Feb-2014 04:35:36] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php(19): PDOStatement->execute(Array)
+#1 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(232): SimpleDBIStatement->execute(Array)
+#2 /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBI.php(261): SimpleDBI->query('SELECT * FROM t...', Array)
+#3 /opt/lampp/htdocs/board/app/models/thread.php(26): SimpleDBI->rows('SELECT * FROM t...')
+#4 /opt/lampp/htdocs/board/app/controllers/thread_controller.php(100): Thread::getAll()
+#5 /opt/lampp/htdocs/board/dietcake/core/controller.php(46): ThreadController->index()
+#6 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(12): Controller->dispatchAction()
+#7 /opt/lampp/htdocs/b in /opt/lampp/htdocs/board/vendor/SimpleDBI/SimpleDBIStatement.php on line 19
+[07-Feb-2014 04:42:26] PHP Fatal error:  Uncaught exception 'DCException' with message 'invalid url format' in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php:29
+Stack trace:
+#0 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(6): Dispatcher::parseAction(NULL)
+#1 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#2 {main}
+  thrown in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php on line 29
+[07-Feb-2014 04:42:39] PHP Fatal error:  Uncaught exception 'DCException' with message 'invalid url format' in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php:29
+Stack trace:
+#0 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(6): Dispatcher::parseAction(NULL)
+#1 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#2 {main}
+  thrown in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php on line 29
+[07-Feb-2014 04:43:18] PHP Fatal error:  Uncaught exception 'DCException' with message 'invalid url format' in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php:29
+Stack trace:
+#0 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(6): Dispatcher::parseAction(NULL)
+#1 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#2 {main}
+  thrown in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php on line 29
+[07-Feb-2014 04:51:52] PHP Fatal error:  Uncaught exception 'DCException' with message 'invalid url format' in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php:29
+Stack trace:
+#0 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(6): Dispatcher::parseAction(NULL)
+#1 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#2 {main}
+  thrown in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php on line 29
+[07-Feb-2014 04:52:59] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 108
+[07-Feb-2014 04:53:47] PHP Fatal error:  Uncaught exception 'DCException' with message 'invalid url format' in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php:29
+Stack trace:
+#0 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(6): Dispatcher::parseAction(NULL)
+#1 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#2 {main}
+  thrown in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php on line 29
+[07-Feb-2014 04:54:09] PHP Fatal error:  Uncaught exception 'DCException' with message 'invalid url format' in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php:29
+Stack trace:
+#0 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(6): Dispatcher::parseAction(NULL)
+#1 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#2 {main}
+  thrown in /opt/lampp/htdocs/board/dietcake/core/dispatcher.php on line 29
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 51
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 52
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 63
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 65
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 65
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 72
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 72
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 51
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 52
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 63
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 65
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 65
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 72
+[07-Feb-2014 05:01:55] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 72
+[07-Feb-2014 05:02:26] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 51
+[07-Feb-2014 05:02:26] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 52
+[07-Feb-2014 05:02:26] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 63
+[07-Feb-2014 05:02:26] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 65
+[07-Feb-2014 05:02:26] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 65
+[07-Feb-2014 05:02:26] PHP Notice:  Undefined variable: last in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 72
+[07-Feb-2014 05:02:26] PHP Notice:  Undefined variable: pagenum in /opt/lampp/htdocs/board/app/controllers/thread_controller.php on line 72
+[07-Feb-2014 05:22:23] PHP Fatal error:  Uncaught exception 'DCException' with message 'action does not exist' in /opt/lampp/htdocs/board/dietcake/core/controller.php:36
+Stack trace:
+#0 /opt/lampp/htdocs/board/dietcake/core/dispatcher.php(12): Controller->dispatchAction()
+#1 /opt/lampp/htdocs/board/app/webroot/index.php(7): Dispatcher::invoke()
+#2 {main}
+  thrown in /opt/lampp/htdocs/board/dietcake/core/controller.php on line 36
+[07-Feb-2014 06:31:59] PHP Catchable fatal error:  Argument 1 passed to Model::__construct() must be an array, boolean given, called in /opt/lampp/htdocs/board/app/models/user.php on line 47 and defined in /opt/lampp/htdocs/board/dietcake/core/model.php on line 8

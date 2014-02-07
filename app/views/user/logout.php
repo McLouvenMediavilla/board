@@ -4,6 +4,6 @@
 	You have successfully logged out.
 </p>
 
-<a href="http://board.example.com">
+<a href='/'>
 	&larr; Back to main
 </a>

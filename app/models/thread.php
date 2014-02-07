@@ -16,18 +16,25 @@ class Thread extends AppModel
 		return new self($row);
 	}
 
-	public static function getAll()
+	public static function getAll($limit)
 	{
 		$threads = array();
-
+        
 		$db = DB::conn();
-		$rows = $db->rows('SELECT * FROM thread');
+		$rows = $db->rows("SELECT * FROM thread {$limit}");
 		foreach ($rows as $row) {
 			$threads[] = new Thread($row);
 		}
 
 		return $threads;
 	}
+
+	public static function countThreads()
+	{
+		$db = DB::conn();
+		$rows = $db->value('SELECT COUNT(id) FROM thread');
+		return $rows;
+	}	
 
 	public function getComments()
 	{
