@@ -3,20 +3,20 @@
 if (!isset($_SESSION['username'])) {
     header('Location: user/login');
 } else {
-	echo "Hello {$_SESSION['username']}";
+    echo "Hello {$_SESSION['username']}";
 }
 ?>
 </h1>
 <h2>All threads</h2>
 
 <ul>
-	<?php foreach ($threads as $v): ?>
-	<li>
-		<a href="<?php eh(url('thread/view', array('thread_id' => $v->id))) ?>">
-		<?php eh($v->title) ?>
-	    </a>
-	</li>
-	<?php endforeach ?>
+    <?php foreach ($threads as $v): ?>
+    <li>
+        <a href="<?php eh(url('thread/view', array('thread_id' => $v->id))) ?>">
+        <?php eh($v->title) ?>
+        </a>
+    </li>
+    <?php endforeach ?>
 </ul>
 
 Page <b><?php eh($pagenum) ?></b> of <b><?php eh($last) ?></b><br />
