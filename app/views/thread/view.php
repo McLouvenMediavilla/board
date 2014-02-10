@@ -1,3 +1,5 @@
+<a class="btn btn-inverse" href="/">Home</a>
+<a class="btn btn-inverse" href="<?php eh(url('user/logout')) ?>">Logout</a>
 <h1><?php eh($thread->title) ?></h1>
 
 <?php foreach ($comments as $k => $v): ?>

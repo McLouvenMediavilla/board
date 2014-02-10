@@ -1,3 +1,5 @@
+<a class="btn btn-inverse" href="/">Home</a>
+<a class="btn btn-inverse" href="<?php eh(url('user/logout')) ?>">Logout</a>
 <h1>
 <?php 
 if (!isset($_SESSION['username'])) {
@@ -22,4 +24,3 @@ if (!isset($_SESSION['username'])) {
 Page <b><?php eh($pagenum) ?></b> of <b><?php eh($last) ?></b><br />
 <?php echo $paginationCtrls; ?><br />
 <a class="btn btn-large btn-primary" href="<?php eh(url('thread/create')) ?>">Create</a>
-<a class="btn btn-large btn-primary" href="<?php eh(url('user/logout')) ?>">Logout</a>

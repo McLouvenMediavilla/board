@@ -12,31 +12,57 @@ class User extends AppModel
                 'validate_between', 6, 15,
             ),
         ),
+        'password_reg' => array(
+            'match' => array(
+                'match_password',
+            ),
+        ),        
+        'username_reg' => array(
+            'match' => array(
+                'match_username',
+            ),
+        ),
     );
 
     public function register($user)
     {
+        // Variables must be manually inserted to the validation
+        $this->validation['password_reg']['match'][] = $this->password;
+        $this->validation['password_reg']['match'][] = $this->password_reg;
+        $this->username_reg = $this->get_same_user();
+        $this->validation['username_reg']['match'][] = $this->username;
+        $this->validation['username_reg']['match'][] = $this->username_reg;
+
         $this->validate();
         if ($this->hasError()) {
             throw new ValidationException('invalid user');
         }
 
         $params = array(
-            'username' => $user->username,
-            'password' => md5($user->password)
+            'username' => $this->username,
+            'password' => md5($this->password)
         );  
 
         $db = DB::conn();
         $db->insert('user', $params);
     }	
 
-    public function checkUser($username, $password)
+    public function authenticate_user()
     {
         $db = DB::conn();
         $row = $db->row('SELECT id, username FROM user WHERE username = ? AND password = ?',
-            array($username, md5($password))
+            array($this->username, md5($this->password))
         );
-        return $row;		
+
+        return $row;
     }
 	
+    public function get_same_username()
+    {
+        $db = DB::conn();
+        $username = $db->value('SELECT username FROM user WHERE username = ? ',
+            array($this->username)
+        );
+        return $username;
+    }
 }

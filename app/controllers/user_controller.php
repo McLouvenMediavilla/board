@@ -12,6 +12,8 @@ class UserController extends AppController
         case 'register_end':
             $user->username = Param::get('username');
             $user->password = Param::get('password');
+            $user->password_reg = Param::get('password_reg');
+
             try {
                 $user->register($user);
             } catch (ValidationException $e) {
@@ -37,11 +39,10 @@ class UserController extends AppController
         case 'login':
             break;
         case 'login_end':
-            $username = Param::get('username');
-            $password = Param::get('password');
-
-            $account = $user->checkUser($username, $password);
-
+            $user->username = Param::get('username');
+            $user->password = Param::get('password');
+            $account = $user->authenticate_user();
+            
             if ($account) {
                 $_SESSION['username'] = $account['username'];
                 $_SESSION['id'] = $account['id'];
@@ -61,17 +62,6 @@ class UserController extends AppController
 
     public function logout()
     {
-        $page = Param::get('page_next', 'logout');
-
-        switch ($page) {
-        case 'logout':
-            session_destroy();
-            break;
-        default:
-            throw new NotFoundException("{$page} is not found");
-            break;
-        }
-
-        $this->render($page);
+        session_destroy();
     }
 }

@@ -4,7 +4,7 @@ class ThreadController extends AppController
     public function index()
     {
         $rows = Thread::countThreads();
-        $page_rows = 3;
+        $page_rows = 5;
 
         // Last page number
         $last = ceil($rows/$page_rows);
@@ -60,6 +60,7 @@ class ThreadController extends AppController
                 $paginationCtrls .= ' &nbsp; &nbsp; <a href="?pn=' . $next . '">Next</a> ';
             }
         }
+        
         $this->set(get_defined_vars());
     }
 

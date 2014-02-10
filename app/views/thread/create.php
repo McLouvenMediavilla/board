@@ -1,3 +1,5 @@
+<a class="btn btn-inverse" href="/">Home</a>
+<a class="btn btn-inverse" href="<?php eh(url('user/logout')) ?>">Logout</a>
 <h1>Create a thread</h1>
 
 <?php if ($thread->hasError() || $comment->hasError()): ?>
@@ -20,7 +22,7 @@
 </div>
 <?php endif ?>
 
-<form class="well" method="post" action="<?php eh(url('')) ?>">
+<form class="well" method="post" action="<?php eh(url('thread/create')) ?>">
     <label>Title</label>
     <input type="text" class="span2" name="title" value="<?php eh(Param::get('title')) ?>">
     <label>Comment</label>

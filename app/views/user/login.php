@@ -1,7 +1,8 @@
 <h1>User Login</h1>
 <?php if (!$valid): ?>
 <div class="alert alert-block">
-    <h5 class="alert-heading">Incorrect username/password.</h5>
+    <h4 class="alert-heading">Login error!</h4>
+    <div>Incorrect <em>username/password</em>.</div>  
 </div>
 <?php endif ?>
 
