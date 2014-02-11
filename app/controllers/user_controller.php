@@ -41,7 +41,7 @@ class UserController extends AppController
         case 'login_end':
             $user->username = Param::get('username');
             $user->password = Param::get('password');
-            $account = $user->authenticate_user();
+            $account = $user->authenticateUser();
             
             if ($account) {
                 $_SESSION['username'] = $account['username'];

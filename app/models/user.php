@@ -19,7 +19,7 @@ class User extends AppModel
         ),        
         'username_reg' => array(
             'match' => array(
-                'match_username',
+                'check_username',
             ),
         ),
     );
@@ -29,7 +29,7 @@ class User extends AppModel
         // Variables must be manually inserted to the validation
         $this->validation['password_reg']['match'][] = $this->password;
         $this->validation['password_reg']['match'][] = $this->password_reg;
-        $this->username_reg = $this->get_same_user();
+        $this->username_reg = $this->getUsername();
         $this->validation['username_reg']['match'][] = $this->username;
         $this->validation['username_reg']['match'][] = $this->username_reg;
 
@@ -47,7 +47,7 @@ class User extends AppModel
         $db->insert('user', $params);
     }	
 
-    public function authenticate_user()
+    public function authenticateUser()
     {
         $db = DB::conn();
         $row = $db->row('SELECT id, username FROM user WHERE username = ? AND password = ?',
@@ -57,7 +57,7 @@ class User extends AppModel
         return $row;
     }
 	
-    public function get_same_username()
+    public function getUsername()
     {
         $db = DB::conn();
         $username = $db->value('SELECT username FROM user WHERE username = ? ',

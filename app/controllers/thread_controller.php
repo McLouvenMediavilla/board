@@ -13,7 +13,6 @@ class ThreadController extends AppController
             $last = 1;
         }
 
-        // Establish $pagenum variable
         $pagenum = 1;
         // Get pagenum from URL vars if it is present, else it is = 1
         $pn = Param::get('pn');
@@ -32,7 +31,7 @@ class ThreadController extends AppController
         $limit = 'LIMIT ' . ($pagenum - 1) * $page_rows . ',' . $page_rows;
         $threads = Thread::getAll($limit);
         
-        // The following controls on pagination
+        // The following controls the pagination
         $paginationCtrls = '';
         if ($last != 1) {
             if ($pagenum > 1) {
